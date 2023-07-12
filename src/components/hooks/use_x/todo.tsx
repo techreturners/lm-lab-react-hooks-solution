@@ -9,7 +9,7 @@ export const Todo = () => {
     return (
         <>
         
-        <h1>Custom Hook</h1>
+        <h2>Custom Hook</h2>
 
         {isFetching ? <p>Fetching...</p> : <p>{data?.title}</p>}
 

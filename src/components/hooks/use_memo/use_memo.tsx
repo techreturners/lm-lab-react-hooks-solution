@@ -13,16 +13,11 @@ export const MemoExample = () => {
 
     return (
         <>
-            <h1>useMemo</h1>
+            <h2>useMemo</h2>
 
             <button onClick={() => setNumber(3)}>Double 3</button>
 
-            <div style={{
-                backgroundColor: '#333',
-                color: '#CCC',
-                padding: '2rem',
-                margin: '2rem'
-            }}>{doubleNumber}</div>
+            <p className='use-memo__text'>{doubleNumber}</p>
         </>
     )
 }
@@ -32,5 +27,7 @@ function slowFunction(num: number) {
     for(let i = 0; i <= 1000000000; i++) {
     // ⏰
     }
-    return num * 2;
+    const result = num * 2;
+	console.log(`result: ${result}`);
+	return result;
 }

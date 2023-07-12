@@ -33,7 +33,7 @@ export const ParentSolution1 = () => {
 
     return (
         <>
-        <h1>useContext - solution 1</h1>
+        <h2>useContext - solution 1</h2>
             <button onClick={toggleTheme}>Toggle Theme</button>
         <ThemeContext.Provider value={theme}>
             <Child1 />

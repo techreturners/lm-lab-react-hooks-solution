@@ -10,7 +10,7 @@ export const ParentSolution2 = () => {
 
     return (
         <>
-            <h1>useContext - solution 2</h1>
+            <h2>useContext - solution 2</h2>
             <ThemeProvider>
                 <Button />
                 <Child1 />

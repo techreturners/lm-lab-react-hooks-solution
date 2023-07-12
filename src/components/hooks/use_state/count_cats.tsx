@@ -17,7 +17,7 @@ export const CountCats = () => {
 
   return (
     <>
-    <h1>useState</h1>
+    <h2>useState</h2>
 
     <p>{getCats()}</p>
 

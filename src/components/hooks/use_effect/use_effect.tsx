@@ -28,7 +28,7 @@ export const APICall = () => {
 
     return (
         <>
-            <h1>useEffect</h1>
+            <h2>useEffect</h2>
             <p>{json?.title}</p>
         </>
     )
