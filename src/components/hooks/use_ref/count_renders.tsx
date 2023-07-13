@@ -9,8 +9,6 @@ export const CountRenders = () => {
     count.current = count.current + 1;
   });
 
-  console.log(count)
-
   return (
     <>
       <h2>useRef</h2>

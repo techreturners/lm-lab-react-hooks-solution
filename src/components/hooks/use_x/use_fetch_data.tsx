@@ -25,7 +25,7 @@ export const useFetch = (url: string) => {
         } catch (e: unknown) {
           setIsFetching(false);
           if (isError(e)) {
-            console.log(e.message)
+            // console.log(e.message)
           }
         }
       };
