@@ -5,7 +5,9 @@ export const CountRenders = () => {
   const [value, setValue] = useState("")
   const count = useRef(1);
 
-    count.current = count.current + 1;
+  useEffect(() => {
+      count.current = count.current + 1;
+    });
 
   return (
     <>
