@@ -8,7 +8,7 @@ import { CountCats } from './components/hooks/use_state/count_cats';
 import { TaskApp } from './components/hooks/use_reducer/todo_app';
 import { Section } from './components/section';
 import { ParentSolution1 } from "./components/hooks/use_context-solution_1/parent_solution_1";
-// import { ParentSolution2 } from "./components/hooks/use_context-solution_2/parent_solution_2";
+import { ParentSolution2 } from "./components/hooks/use_context-solution_2/parent_solution_2";
 
 
 function App() {
@@ -16,13 +16,15 @@ function App() {
 		<>
 			<div className='App'>
 
+					<h1 >Hooks Solution Repo!</h1>
+
+					<hr />
 				<Section>
-					<h1>Hooks Solution Repo!</h1>
+					<ParentSolution1/>
 				</Section>
 
 				<Section>
-					<ParentSolution1/>
-					{/* <ParentSolution2/> */}
+					<ParentSolution2/>
 				</Section>
 
 				<Section>

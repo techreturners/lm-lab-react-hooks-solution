@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { isError } from "../../../helpers/is_error";
 
-export function useFetch<TResponse>(url: string) {
+export const useFetch = <TResponse,>(url: string) => {
+
   const [data, setData] = useState<TResponse | undefined>();
   const [isFetching, setIsFetching] = useState(true);
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -24,5 +25,5 @@ export function useFetch<TResponse>(url: string) {
     fetchData();
   }, [url]);
 
-return {data, isFetching};
+  return { data, isFetching };
 }

@@ -17,6 +17,8 @@ const initialTasks: Task[] = [
 export function TaskApp() {
 	const [tasks, setTasks] = useState(initialTasks);
 
+	console.log(tasks)
+
 	function handleAddTask(text: string) {
 		setTasks([
 			...tasks,
@@ -29,6 +31,7 @@ export function TaskApp() {
 	}
 
 	function handleChangeTask(updatedTask: Task) {
+		console.log(updatedTask.id)
 		setTasks(
 			tasks.map((t) => {
 				if (t.id === updatedTask.id) {
@@ -41,8 +44,9 @@ export function TaskApp() {
 	}
 
 	function handleDeleteTask(taskId: number) {
-		setTasks(tasks.filter((t) => t.id !== taskId));
+		setTasks(tasks.filter(t => t.id !== taskId))
 	}
+
 
 	return (
 		<>
