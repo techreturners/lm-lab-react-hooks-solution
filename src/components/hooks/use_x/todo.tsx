@@ -1,10 +1,17 @@
-import useFetch from "./use_fetch_data";
+import {useFetch} from "./use_fetch_data";
+
+interface TodoResponse {
+	userId: number;
+	id: number;
+	title: string;
+	completed: boolean;
+}
 
 export const Todo = () => {
     
   const url = "https://jsonplaceholder.typicode.com/todos/1"
 
-  const {data, isFetching} = useFetch(url)
+  const {data, isFetching} = useFetch<TodoResponse>(url)
 
     return (
         <>
