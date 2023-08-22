@@ -16,9 +16,9 @@ function App() {
 		<>
 			<div className='App'>
 
-					<h1 >Hooks Solution Repo!</h1>
-
+					<h1>Hooks Solution Repo! 🪝</h1>
 					<hr />
+
 				<Section>
 					<ParentSolution1/>
 				</Section>
