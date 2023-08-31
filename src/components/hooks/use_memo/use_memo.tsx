@@ -4,14 +4,14 @@ export const MemoExample = () => {
 	
 	console.log('Rendering component...');
 
-	const [number, setNumber] = useState({ input: 0 });
+	const [numberObj, setNumberObj] = useState({ input: 0 });
 
-	const doubleNumber = useMemo(() => slowFunction(number.input), [number.input]);
+	const doubleNumber = useMemo(() => slowFunction(numberObj.input), [numberObj.input]);
 
 	return (
 		<>
 			<h2>useMemo</h2>
-			<button onClick={() => setNumber({ input: 3 })}>Double 3</button>
+			<button onClick={() => setNumberObj({ input: 3 })}>Double 3</button>
 			<p className='use-memo__text'>{doubleNumber}</p>
 		</>
 	);
