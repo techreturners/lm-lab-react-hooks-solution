@@ -9,6 +9,7 @@ export const useFetch = <TResponse,>(url: string) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setIsFetching(true)
         const response = await fetch(url);
         setIsFetching(false);
         if (response.status === 200) {
@@ -25,5 +26,5 @@ export const useFetch = <TResponse,>(url: string) => {
     fetchData();
   }, [url]);
 
-  return { data, isFetching };
+  return { data, setData, isFetching };
 }
